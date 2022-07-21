@@ -1,0 +1,434 @@
+@import "./null.scss";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Old+Standard+TT&display=swap');
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    font-family: "League Spartan"
+    
+}
+.page {
+    background-color: #33395c;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 230px; 
+}
+
+.container {
+    padding: 0 85px; 
+    width: 100%;    
+    @media (max-width:610px) {
+        padding: 0 15px
+    }
+}
+
+.header {
+    min-height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__burger {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #b0b3c4;
+        text-transform: uppercase;       
+    }
+    &__icon {
+        div {
+            width: 25px;
+            height: 2px;
+            background-color: #b0b3c4;
+            margin: 6px 10px;
+        }
+    }
+}
+.content {
+    background-color: #33395c;
+    flex: 0 1 100%;  
+}
+
+.block {
+    @media (max-width:1260px) {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 64px;
+        line-height: 78px;
+        font-weight: 700;
+        color: #ffffff;
+        @media (max-width:1260px) {
+            font-size: 32px;
+        }
+    }
+
+    &__text {
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 400;
+        color: #ffffff;
+        @media (max-width:1260px) {
+            font-size: 20px;
+        }
+    }
+
+    &__button {
+        font-size: 20px;
+        line-height: 38px;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: #e9d036;
+        padding: 10px 27px;
+        border-radius: 60px;
+        
+    }
+}
+
+.classic {
+    flex: 1 0 480px;  
+    &__row {
+        background: url("../img/bg/header.jpg") center left no-repeat;
+        background-size: cover;
+        width: 100%;  
+        min-height: 480px; 
+        text-align: end;
+        display: flex;
+        justify-content: end;
+        
+    }
+
+    &__block { 
+        width: 525px;   
+        padding: 80px 65px;
+        @media (max-width:1260px) {
+            width: 100%;
+            padding: 80px 15px;            
+        }
+        
+    }
+
+    &__title {
+
+    }
+
+    &__text {
+        margin-top: 45px;
+    }
+
+    &__button {
+        margin-top: 50px;
+        
+    }
+
+    
+}
+
+.brands {
+
+        &__row {
+            display: flex;
+            min-height: 805px;  
+            @media (max-width:1100px) {
+                flex-direction: column;
+            }
+            
+        }
+
+		&__block1 {  
+            display: flex; 
+            flex: 0 1 40%; 
+            background: url("../img/bg/main1.jpg") center center no-repeat;
+            background-size: cover;
+            text-align: center;   
+            .block {
+                margin: 0 auto 85px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;  
+                align-items: center;
+                button {
+                    width: 150px;
+                    margin-top: 45px;
+                    background-color: #491a37;
+                }  
+                &__text {
+                    margin: 45px 10px 0 10px;
+                } 
+                &__title {
+                    margin: 0 10px 0 10px;
+                }           
+            }          
+		}
+
+		&__block2 {  
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 60%; 
+		}
+
+		&__green {
+            flex: 0 1 50%;
+            position: relative;            
+            img {
+                width: 100%; 
+                height: 100%;               
+                position: absolute;
+                top: 0;
+                right: 0;
+                object-fit: cover;
+                object-position: top right;            
+            }
+            .block {
+                position: relative;
+                width: 50%;
+                text-align: start;
+                margin: 60px 40px 0 60px;
+                @media (max-width:1100px) {
+                    margin: 60px auto;
+                    text-align: center;
+                    width: 90%;
+                }
+                button {
+                    margin: 40px 0;
+                }
+            }
+		}
+
+		&__finder {
+            display: flex;
+            flex: 0 1 50%; 
+            @media (max-width:1100px) {
+                flex-direction: column;
+            }  
+            .block {
+                text-align: center;
+                margin: 75px 0;
+                &__title {
+                    font-family: 'Old Standard TT';
+                    font-size: 36px;
+                    line-height: 38px;
+                    font-weight: 700;                   
+                }
+                
+            }
+            
+		}
+        &__chocolate {            
+            .block {
+                margin: 75px 15px 60px 15px;
+                text-align: center;
+                &__title {
+
+                }
+                &__button {  
+                    position: relative;   
+                    width: 50px; 
+                    height: 60px; 
+                    border-radius: 50%;     
+                    margin-top: 20px;       
+                    span {
+                        position: absolute;
+                        display: flex;   
+                        top: 18px;   
+                        left: 0;                  
+                        align-items: center;
+                        font-size: 50px;
+                        padding: 0 0;
+
+                    }
+                }
+            }
+        }
+        
+        
+
+        &__block {
+            flex: 0 1 50%;
+            &:nth-child(1) {
+                background-color: #636fe6;
+            }
+            &:nth-child(2) {
+                background: url("../img/bg/main3.jpg") bottom right no-repeat;
+                background-size: cover;
+            }
+        }
+}
+
+.finder-form {
+    margin: 45px 0;
+    div {
+        display: flex;
+        justify-content: center;
+        font-family: Arial;
+        font-size: 13px;
+        line-height: 38px;
+        font-weight: 700;
+        color: #ffffff;
+    }    
+    &__checkbox {  
+        width: 20px; 
+        margin: 0 15px 0 0;
+        accent-color: #65d8b9;
+        color: white;
+        background-color: white;        
+
+    }
+    &__email {
+        max-width: 242px;
+        @media (max-width:1100px) {
+            padding: 0 10px;
+        }
+        width: 100%;
+        padding: 0 40px;
+        font-family: 'League Spartan';
+        font-size: 14px;
+        line-height: 38px;
+        font-weight: 700;
+        color: #040406;
+        border-radius: 50px;
+        margin-bottom: 28px;    }
+    
+}
+
+.oliver {
+    background-color: #33395c;
+
+    .block {
+
+        &__title {
+        }
+    
+        &__text {
+        }
+    
+        &__button {
+        }
+    }
+
+    &__row {
+        display: flex;
+        min-height: 470px;
+        @media (max-width:1240px) {
+            flex-direction: column;
+        }
+    }
+
+    &__block1 {
+        flex: 0 1 70%;
+        background: url("../img/bg/footer1.jpg") center right no-repeat;
+        background-size: cover;
+        text-align: start;
+        display: flex;
+        @media (max-width:1240px) {                
+            justify-content: center;
+            background: #d9e3ed;
+        }
+        
+        .block {
+            margin: 85px 15px 135px 50px;
+            width: 40%;
+            @media (max-width:1000px) {                
+                width: 100%;
+                margin: 60px auto;
+            }
+            &__title {
+                font-size: 44px;
+                line-height: 60px;
+                font-weight: 700;
+                color: #5d5f81;
+
+            }
+            &__text {
+                font-family: 'Old Standard TT';
+                font-size: 36px;
+                line-height: 56px;
+                font-weight: 400;
+                color: #7f8196;
+                margin-top: 45px;
+            }
+            &__button {
+                margin-top: 55px;
+                background-color: #d95d4d;
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 30%;        
+    }
+
+    &__twitter, &__facebook {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 1 50%; 
+        min-height: 228px;
+    }
+
+    &__icon {
+    }
+
+    &__button {
+        padding: 5px 0;
+        width: 135px;
+        text-align: center;
+        font-family: 'League Spartan';
+        font-size: 16px;
+        line-height: 38px;
+        font-weight: 700;
+        color: #ffffff;
+        border-radius: 50px;
+        margin-top: 30px;
+        &_tw {
+            background-color: #72c8e6;
+        }
+        &_fc{
+            background-color: #5b79b8;
+        }
+    }
+    &__twitter {
+        background-color: #00b1ed; 
+    }
+
+    &__facebook {
+        background-color: #3b5a9a;      
+    }
+}
+
+
+
+
+.footer {
+    background-color: #33395c;
+    min-height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    &__copyright {
+        font-family: Arial;
+        font-size: 13px;
+        line-height: 38px;
+        font-weight: 700;
+        color: #b0b3c4;
+    }
+}
+
